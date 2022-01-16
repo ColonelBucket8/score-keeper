@@ -1,0 +1,53 @@
+.ScoreKeeper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ScoreKeeper-card {
+  width: 500px;
+  height: 550px;
+}
+
+.ScoreKeeper-img {
+  width: 400px;
+  height: 280px;
+}
+
+.ScoreKeeper-scores {
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin_bottom: 0;
+}
+
+.ScoreKeeper-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+
+.ScoreKeeper-p1Btn {
+  width: 40%;
+}
+
+.ScoreKeeper-p2Btn {
+  width: 40%;
+}
+
+.ScoreKeeper-reset {
+  width: 20%;
+}
+
+.ScoreKeeper-winScore {
+  display: flex;
+  justify-content: center;
+}
+
+.ScoreKeeper-winner {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
