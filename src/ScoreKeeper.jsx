@@ -26,7 +26,7 @@ function ScoreKeeper() {
           image="https://k9f7a9j9.rocketcdn.me/wp-content/uploads/2021/08/lisa-keffer-i0kB5B9J8Ds-unsplash.jpg"
           alt="ping pong"
         />
-        <CardContent>
+        <CardContent className="ScoreKeeper-cardContent">
           <Typography gutterBottom variant="h5" component="div">
             {gameOver && <h5 className="ScoreKeeper-winner">WINNER</h5>}
             <div className="ScoreKeeper-scores">
@@ -48,7 +48,10 @@ function ScoreKeeper() {
             <Button
               className="ScoreKeeper-reset"
               variant="contained"
-              onClick={() => (setP1(0), setP2(0))}
+              onClick={() => {
+                setP1(0);
+                setP2(0);
+              }}
             >
               Reset
             </Button>
@@ -67,9 +70,11 @@ function ScoreKeeper() {
             <Select
               value={winScore}
               label="Score"
-              onChange={(e) => (
-                setWinScore(e.target.value), setP1(0), setP2(0)
-              )}
+              onChange={(e) => {
+                setWinScore(e.target.value);
+                setP1(0);
+                setP2(0);
+              }}
             >
               {winScores.map((score) => (
                 <MenuItem value={score}>{score}</MenuItem>

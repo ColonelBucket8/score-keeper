@@ -16,16 +16,20 @@
   height: 280px;
 }
 
+.ScoreKeeper-cardContent {
+  padding: 16px 10px;
+}
+
 .ScoreKeeper-scores {
   font-size: 3rem;
   display: flex;
   justify-content: space-evenly;
-  margin_bottom: 0;
+  margin-bottom: 0;
 }
 
 .ScoreKeeper-buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-bottom: 1rem;
 }
 
